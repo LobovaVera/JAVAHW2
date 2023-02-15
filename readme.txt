@@ -29,6 +29,19 @@ public class Main {
     }
 
 
+для проверки судоку
+//                {'5', '3', '9', '8', '7', '6', '4', '1', '2'},
+//                {'7', '2', '8', '3', '4', '1', '9', '6', '5'},
+//                {'6', '4', '1', '2', '9', '5', '7', '3', '8'},
+//                {'4', '6', '2', '5', '3', '9', '8', '7', '1'},
+//                {'3', '8', '5', '7', '2', '1', '6', '4', '9'},
+//                {'1', '9', '7', '4', '6', '8', '2', '5', '3'},
+//                {'2', '5', '6', '1', '8', '7', '3', '9', '4'},
+//                {'9', '1', '3', '6', '4', '2', '5', '8', '7'},
+//                {'8', '7', '4', '9', '5', '3', '1', '2', '6'}};
+
+
+выбрать все простые числа
 нужен динамический массив, алгоритм см зеленая тетрадь
 //    public static int[] collectAllPrimes1(int[] arr) {
 //
@@ -56,4 +69,64 @@ public class Main {
 //        return primeColl;
 //    }
 
-
+Судоку: зашквар
+//        for (int u = 0; u < chboard.length; u++) {
+//            for (int i = 0; i < chboard.length; i++) {
+//                for (int j = 0; j < chboard.length - 1; j++) {
+//                    for (int z = 0; z < chboard.length - 1; z++) {
+//                        if (chboard[i][j + i] == chboard[i][z + j] || chboard[i][j] == chboard[z + j][i]) {
+//                            System.out.println("Есть повторы, плохой судоку!");
+//                            return false;
+//                        }
+//
+//                    }
+//
+//                }
+//
+//            }
+//        }
+//        for (int u = 0; u < 3; u++) {
+//            for (int i = 0; i < 3; i ++) {
+//                for (int j = u; j < 3 + u; j++) {
+//                    for (int k = i; k < 3 + i; k++) {
+//                        if (chboard[u][i] == chboard[j][k]) {
+//                            System.out.println("Есть повторы, плохой судоку!");
+//                            return false;
+//                        }
+//                        if(chboard[u][i+3]==chboard[j][k+3]){
+//                            System.out.println("Есть повторы, плохой судоку!");
+//                            return false;
+//                        }
+//                        if(chboard[u][i+6]==chboard[j][k+6]){
+//                            System.out.println("Есть повторы, плохой судоку!");
+//                            return false;
+//                        }
+//                        if(chboard[u+3][i]==chboard[j+3][k]){
+//                            System.out.println("Есть повторы, плохой судоку!");
+//                            return false;
+//                        }
+//                        if(chboard[u+3][i+3]==chboard[j+3][k+3]){
+//                            System.out.println("Есть повторы, плохой судоку!");
+//                            return false;
+//                        }
+//                        if(chboard[u+3][i+6]==chboard[j+3][k+6]){
+//                            System.out.println("Есть повторы, плохой судоку!");
+//                            return false;
+//                        }
+//                        if(chboard[u+6][i]==chboard[j+6][k]){
+//                            System.out.println("Есть повторы, плохой судоку!");
+//                            return false;
+//                        }
+//                        if(chboard[u+6][i+3]==chboard[j+6][k+3]){
+//                            System.out.println("Есть повторы, плохой судоку!");
+//                            return false;
+//                        }
+//                        if(chboard[u+6][i+6]==chboard[j+6][k+6]){
+//                            System.out.println("Есть повторы, плохой судоку!");
+//                            return false;
+//                        }
+//                    }
+//                }
+//
+//            }
+//        }
